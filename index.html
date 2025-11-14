@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Tamagotchi Poulpe 🐙</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="scripts.js" defer></script>
+</head>
+
+<body>
+  <section id="section">
+    <h1 class="titre">🐙 Mon Tamagotchi Poulpe — prends soin de moi ! 💖</h1>
+
+    <div class="containerDesBtn">
+      <button id="nourir">🍜 Manger</button>
+      <button id="boire">🥤 Boire</button>
+      <button id="dormir">💤 Dormir</button>
+    </div>
+
+    <div class="container-principal">
+      <div class="progressContainer">
+        <div class="barre">
+          <label for="eat">🍜 Nourriture</label>
+          <progress id="eat" max="100" value="100"></progress>
+        </div>
+        <div class="barre">
+          <label for="drink">🥤 Boisson</label>
+          <progress id="drink" max="100" value="100"></progress>
+        </div>
+        <div class="barre">
+          <label for="sleep">💤 Sommeil</label>
+          <progress id="sleep" max="100" value="100"></progress>
+        </div>
+      </div>
+
+      <div class="renuitialiser">
+        <div id="imgPulpe">
+          <img src="poulpe.png" alt="Mon poulpe virtuel" />
+        </div>
+      </div>
+    </div>
+
+    <div class="resetContainer">
+      <button id="reset">🔄 Recommencer le jeu</button>
+    </div>
+  </section>
+</body>
+
+</html>

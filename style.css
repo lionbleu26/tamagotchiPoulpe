@@ -1,0 +1,256 @@
+body {
+  background-color: #171625;
+  font-family: "Bradley Hand", cursive;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#section {
+  background-color: #262A65;
+  width: 50em;
+  margin: 0 auto;
+  box-shadow: 0 0 12px rgba(142, 231, 253, 0.534);
+  border-radius: 16px;
+  padding: 2em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titre {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: #E0DFFE;
+  text-align: center;
+}
+
+/* poulpe image */
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.barre {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* container du poulpe */
+#imgPulpe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* barres de progression */
+.progressContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: left;
+  margin-top: 30px;
+  color: white;
+}
+
+progress {
+  width: 300px;
+  height: 25px;
+  appearance: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* style personnalisé pour les barres */
+progress::-webkit-progress-bar {
+  background-color: #E0DFFE;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #6E6ADE;
+  border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+  background-color: #6E6ADE;
+  border-radius: 10px;
+}
+
+/* container principal */
+.container-principal {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* container des boutons d'action */
+.containerDesBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #197CAE;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+  color: white;
+  box-shadow: 2px 2px 5px rgba(119, 85, 102, 0.2);
+}
+
+button:hover {
+  background-color: #107D98;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: inset 2px 2px 5px rgba(50, 16, 33, 0.3);
+}
+
+/* bouton reset */
+.resetContainer {
+  margin-top: 40px;
+}
+
+#reset {
+  background-color: #197CAE;
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  width: auto;
+}
+
+#reset:hover {
+  background-color: #107D98;
+}
+
+/* ========== MEDIA QUERIES POUR MOBILE ========== */
+
+/* Tablettes et petits écrans */
+@media screen and (max-width: 768px) {
+  #section {
+    width: 90%;
+    padding: 1.5em 1em;
+    margin: 1em;
+  }
+
+  .titre {
+    font-size: 1.4rem;
+    margin-top: 10px;
+  }
+
+  .container-principal {
+    gap: 30px;
+  }
+
+  progress {
+    width: 250px;
+    height: 23px;
+  }
+
+  img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Smartphones */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0.5em;
+  }
+
+  #section {
+    width: 95%;
+    padding: 1em 0.8em;
+    margin: 0.5em;
+  }
+
+  .titre {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    line-height: 1.4;
+  }
+
+  .containerDesBtn {
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container-principal {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .progressContainer {
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .barre {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  progress {
+    width: 85%;
+    max-width: 300px;
+    height: 22px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #imgPulpe {
+    margin-top: 10px;
+  }
+
+  .resetContainer {
+    margin-top: 20px;
+  }
+}
+
+/* Très petits écrans */
+@media screen and (max-width: 360px) {
+  .titre {
+    font-size: 1.1rem;
+  }
+
+  img {
+    width: 130px;
+    height: 130px;
+  }
+
+  progress {
+    width: 90%;
+    height: 20px;
+  }
+
+  .containerDesBtn {
+    gap: 8px;
+  }
+}
