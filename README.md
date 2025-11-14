@@ -2,7 +2,7 @@
 
 Un jeu **Tamagotchi style rétro** où tu dois t'occuper d'un adorable poulpe virtuel ! Nourris-le, donne-lui à boire et fais-le dormir pour le garder en vie et heureux.
 
-🔗 **[Jouer à la démo en ligne](https://tamagotchi-poulpe.vercel.app)** _(remplace par ton URL Vercel)_
+🔗 **[Jouer à la démo en ligne](https://tamagotchi-poulpe.vercel.app/)** _(remplace par ton URL Vercel)_
 
 ---
 
