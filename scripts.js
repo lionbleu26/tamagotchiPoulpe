@@ -44,8 +44,6 @@ function progressEat() {
   eat.value -= 1;
   //fonction avec les differente condition en fonction du niveau de la jauge
   conditionNegative();
-
-  console.log(eat.value);
 }
 
 //jauge de la soif
