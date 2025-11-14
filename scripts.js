@@ -1,4 +1,3 @@
-
 //fonction qui sont lancer le jeux avec interval
 
 let intervalEat = setInterval(progressEat, 1000);
@@ -67,9 +66,6 @@ function progresSleep() {
 }
 //donner a manger
 function giveFood() {
-  //   for (let i = 0; i < 10; i++) {
-  //     eat.value++;
-  //   }
   eat.value += 10;
   conditionsPositive();
 }
@@ -111,7 +107,6 @@ function Reset() {
 function conditionNegative() {
   //si il arrive a zero un message est afficher
   //et un bouton "reset" apparait
-  // on met || pour "ou" avec la valeur a comparer à chaque fois
   if (eat.value == 0 || drink.value == 0 || sleep.value == 0) {
     pulpe = `<p> Oups, ton tamagotchi c'est échaper 😓</p>  `;
     imgPulpe.innerHTML = pulpe;
